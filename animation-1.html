@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ANIMATION</title>
+	<style type="text/css">
+		.box{
+			width:150 ;
+			height:150 ;
+			border-radius: 50%;
+			background: red;
+		}
+		.box-1{
+			position: absolute;
+			animation-name: box-1;
+			animation-fill-mode: forwards;
+			animation-duration: 5s;
+
+		}
+		.box-2{
+			position: absolute;
+			animation-name: box-2;
+			animation-fill-mode: forwards;
+			animation-duration: 10s;
+			
+		}
+		.box-3{
+			position: absolute;
+			animation-name: box-3;
+			animation-fill-mode: forwards;
+			animation-duration: 15s;
+
+		}
+		.box-4{
+			position: absolute;
+			animation-name: box-4;
+			animation-fill-mode: forwards;
+			animation-duration: 20s;
+			
+		}
+		@frames box-1{
+			100%{
+				background:blue;
+				margim-top:0;
+				margim-left:1000px;
+
+			}
+		}
+		@frames box-2{
+			50%{
+				background:blue;
+				margim-top:0;
+				margim-left:1000px;
+			}
+			100%{
+				background: pink;
+				margin-top: 400px;
+				margin-left: 1000px;
+			}
+		}
+		@frames box-3{
+			25%{
+				margim-top:0;
+				margim-left:1000px;
+			}
+			50%{
+				margin-top: 400px;
+				margin-left: 1000px;
+			}
+			100%{
+				margin-top: 400px;
+				margin-left: 0;
+				background: brown;
+			}
+		}
+		@frames box-4{
+			25%{
+				margim-top:0;
+				margim-left:1000px;
+			}
+			50%{
+				margin-top: 400px;
+				margin-left: 1000px;
+			}
+			75%{
+				margin-top: 400px;
+				margin-left: 0;
+			}
+			100%{
+				background: orange;
+				margin-top: 0;
+				margin-left: 0;
+			}
+		}
+
+
+
+	</style>
+</head>
+<body>
+<div class="box1"></div> 
+<div class="box-2"></div>
+<div class="box-3"></div>
+<div class="box-4"></div>
+</div>
+</body>
+</html>
